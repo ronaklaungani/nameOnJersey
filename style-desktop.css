@@ -13,6 +13,9 @@
   min-height: 100%;
   z-index: -10;
   filter: blur(0px);
+  animation: opacityanimation;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 
 #main-tint { background-color: black;
@@ -20,18 +23,31 @@
 	height: 100%;
 	position: fixed;
 	opacity: 50%;
-	z-index: -1; }
+	z-index: -1;
+	animation: opacityanimation50;
+	animation-duration: 5s;
+	animation-fill-mode: forwards; }
 
 .main-content { padding: 60px; }
 
 .sitename { font-family: 'Krona One';
 			color: white;
 			letter-spacing: -2.6px;
-			font-size: 22px; }
+			font-size: 22px;
+			opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			 }
 
 .top-menu { float: right;
 			margin-top: -30px;
-			z-index: +10; }
+			z-index: +10;
+			opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			 }
 
 .about { float: left;
 			padding: 10px 30px 10px 30px;
@@ -62,16 +78,22 @@
 				background-color: red;
 				position: relative; 
 				float: left;
-				width: 18px;
-				height: 18px;
+				width: 0px;
+				height: 0px;
 				border-radius: 9px;
 				margin-right: -90px;
 				display: block;
+
+				animation: zoomout;
+			animation-duration: 0.4s;
+			animation-fill-mode: forwards;
+			animation-delay: 0s;
 				 }
 
 
 .process-area { margin-top: 240px;
-				z-index: -10; }
+				z-index: -10;
+				 }
 
 
 
@@ -79,18 +101,34 @@ h1 { font-family: 'Krona One';
 			color: white;
 			font-size: 40px;
 			text-transform: uppercase;
-			letter-spacing: 4px; }
+			letter-spacing: 4px;
+			opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0.2s; }
 
 h2 { font-family: 'Krona One';
 			color: white;
-			font-size: 14px; }
+			font-size: 14px;
+			opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0.2s;
+			 }
 
 .body-text { font-family: 'Poppins';
 				color: white;
 				font-weight: 200;
 				letter-spacing: 1px;
 				padding: 20px 0px 2px 0px;
-				font-size: 16px; }
+				font-size: 16px;
+				opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0.4s; }
 
 .small-text { font-family: 'Poppins';
 				color: white;
@@ -114,6 +152,11 @@ h2 { font-family: 'Krona One';
 			font-size: 16px;
 			margin: 10px 0px 10px 0px;
 			transition-duration: 0.2s;
+			opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0.6s;
 			 }
 
 .button-1:hover { text-decoration: none;
@@ -150,7 +193,12 @@ h2 { font-family: 'Krona One';
 
 
 #trainstops { padding: 20px 0px 40px 0px;
-				margin-top: -240px; }
+				margin-top: -240px;
+				opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0s; }
 
 .nav-tab-active { width: 70px;
 			border-radius: 2px;
@@ -240,14 +288,24 @@ h2 { font-family: 'Krona One';
 
 
 
-.tables { padding-top: 30px; }
+.tables { padding-top: 30px;
+			opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			
+			 }
 
 .all-icons { width: 30px;
 				height: auto;
 				padding: 5px; }
 
 
-#step-one-div {  }
+#step-one-div { opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			 }
 
 
 /*#jersey-box-1 { width: 34%;
@@ -262,10 +320,15 @@ h2 { font-family: 'Krona One';
 
 #jersey-box-1 { width: 40%;
 				float: right;
-				margin-right: -100px;
+				margin-left: 700px;
 				margin-top: -60px;
-				position: relative;
+				position: absolute;
 				z-index: -1;
+				opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
 				}
 
 #jersey-box-2 { width: 34%;
@@ -275,6 +338,11 @@ h2 { font-family: 'Krona One';
 				margin-top: 300px;
 				position: relative;
 				z-index: -1;
+				opacity: 0%;
+			animation: opacityanimation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0s;
 
 				}
 
@@ -335,6 +403,7 @@ h2 { font-family: 'Krona One';
 #cart-window { position: fixed;
 				right: 0;
 				top: 0;
+				margin-right: -500px;
 				float: right;
 				width: 500px;
 				height: 100%;
@@ -343,6 +412,10 @@ h2 { font-family: 'Krona One';
 				backdrop-filter: blur(20px);
 				display: none;
 				z-index: +1;
+				animation: slideinfromright;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0s;
 
 				 }
 
@@ -465,6 +538,42 @@ h2 { font-family: 'Krona One';
 
 
 
+
+
+
+
+@keyframes opacityanimation {
+	0% { opacity: 0%; }
+
+	100% { opacity: 100%; }
+}
+
+
+@keyframes opacityanimation50 {
+	0% { opacity: 100%; }
+
+	100% { opacity: 50%; }
+}
+
+
+
+@keyframes slideinfromright {
+	0% { margin-right: -500px; }
+
+	100% { margin-right: 0px; }
+}
+
+
+@keyframes zoomout {
+	0% { width: 0px;
+			height: 0px; }
+
+	80% { width: 20px;
+			height: 20px; }
+
+	100% { width: 18px;
+			height: 18px; }
+}
 
 
 

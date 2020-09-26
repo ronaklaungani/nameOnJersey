@@ -57,8 +57,8 @@
 
 		</div>
 
-		<p class="sitename">MYSPORT.COM</p>
-		<div class="top-menu">
+		<p class="sitename" style="animation-delay: 1.4s;">MYSPORT.COM</p>
+		<div class="top-menu" style="animation-delay: 1.4s;">
 			<h2 class="about">About</h2>
 			<div class="thecartset">
 				<img src="assets/cart.svg" class="all-icons" onclick="opencart()">
@@ -86,13 +86,13 @@
 
 			<div id="home-div" style="display: block;">
 
-				<h1>Put your name on it</h1>
-				<p class="body-text">Add your name on your favourite jersey, delivery on us</p>
-				<button class="button-1" style="margin-top: 30px;" onclick="openstepone()">Get Started</button>
+				<h1 style="animation-delay: 1.6s;">Put your name on it</h1>
+				<p class="body-text" style="animation-delay: 1.8s;">Add your name on your favourite jersey, delivery on us</p>
+				<button class="button-1" style="margin-top: 30px; animation-delay: 2s;" onclick="openstepone()">Get Started</button>
 
 			</div>
 
-			<div id="trainstops" style="display: none;">
+			<div id="trainstops" style="display: none; animation-delay: 0s;">
 
 					<table class="tables" style="margin-left: -20px">
 						<tr>
@@ -109,8 +109,8 @@
 
 			<div id="step-one-div" style="display: none;">
 
-				<h1>Select your sport</h1>
-					<table class="tables">
+				<h1 style="animation-delay: 0.4s;">Select your sport</h1>
+					<table class="tables" style="animation-delay: 0.6s;">
 						<tr>
 							<td><div class="tab-active" id="soccer-id" onclick="selectthissport(this.id)"><img class="tab-icons" src="assets/soccer.svg"><p class="small-text">Soccer</p></div></td>
 							<td><div class="tab-inactive" id="volley-id" onclick="selectthissport(this.id)"><img class="tab-icons" src="assets/volley.svg"><p class="small-text">Volleyball</p></div></td>
@@ -123,14 +123,14 @@
 						</tr>
 					</table>
 
-				<button class="button-1" style="margin-top: 30px;" onclick="opensteptwo()">Next <i class="las la-arrow-right"></i></button>
+				<button class="button-1" style="margin-top: 30px; animation-delay: 0.8s;" onclick="opensteptwo()">Next <i class="las la-arrow-right"></i></button>
 
 			</div>
 
 			<div id="step-two-div" style="display: none;">
 
-				<h1>Choose your side</h1>
-					<table class="tables">
+				<h1 style="animation-delay: 0.4s;">Choose your side</h1>
+					<table class="tables" style="animation-delay: 0.6s;">
 						<tr>
 							<td><div class="tab-active" id="blank-id" onclick="selectthisemblem(this.id)"><img class="tab-icons" src="assets/blank-disk.svg"><p class="small-text">Blank</p></div></td>
 							<td><div class="tab-inactive" id="manu-id" onclick="selectthisemblem(this.id)"><img class="tab-icons" src="assets/manu.svg"><p class="small-text">Manchester United</p></div></td>
@@ -145,14 +145,14 @@
 						</tr>
 					</table>
 
-				<button class="button-1" style="margin-top: 30px;" onclick="openstepthree()">Next <i class="las la-arrow-right"></i></button>
+				<button class="button-1" style="margin-top: 30px; animation-delay: 0.8s;" onclick="openstepthree()">Next <i class="las la-arrow-right"></i></button>
 
 			</div>
 
 			<div id="step-three-div" style="display: none;">
 
-				<h1>Choose your Color</h1>
-					<table class="tables">
+				<h1 style="animation-delay: 0.4s;">Choose your Color</h1>
+					<table class="tables" style="animation-delay: 0.6s;">
 						<tr>
 							<td><div class="tab-active" id="white-id" onclick="selectthiscolor(this.id)"><div class="color-disks" style="background-color: #ffffff;"></div><p class="small-text">White</p></div></td>
 							<td><div class="tab-inactive" id="blue-id" onclick="selectthiscolor(this.id)"><div class="color-disks" style="background-color: #213F84;"></div><p class="small-text">Royal Blue</p></div></td>
@@ -162,21 +162,21 @@
 						</tr>
 					</table>
 
-				<button class="button-1" style="margin-top: 30px;" onclick="openstepfour()">Next <i class="las la-arrow-right"></i></button>
+				<button class="button-1" style="margin-top: 30px; animation-delay: 0.8s;" onclick="openstepfour()">Next <i class="las la-arrow-right"></i></button>
 
 			</div>
 
 			<div id="step-four-div" style="display: none;">
 
-				<h1>Make it yours</h1>
+				<h1 style="animation-delay: 0.4s;">Make it yours</h1>
 
-				<p class="body-text">Add your name, jersey number & select your size</p>
+				<p class="body-text" style="animation-delay: 0.6s;">Add your name, jersey number & select your size</p>
 
-				<input type="text" name="jerseyname" placeholder="Enter your name here" class="input name" id="jersey-name-id" onkeyup="typethename()" maxlength="12"><input type="tel" name="jerseynumber" placeholder="No." class="input number" id="jersey-no-id" onkeyup="typethenumber()" maxlength="2">
+				<input style="animation-delay: 0.6s;" type="text" name="jerseyname" placeholder="Enter your name here" class="input name" id="jersey-name-id" onkeyup="typethename()" maxlength="12"><input style="animation-delay: 0.6s;" type="tel" name="jerseynumber" placeholder="No." class="input number" id="jersey-no-id" onkeyup="typethenumber()" maxlength="2">
 
-				<p class="small-text" style="float: left; cursor: pointer; text-decoration: underline;" id="changetextcolor" onclick="changetexttoblack()">Change text color to Black</p>
+				<p class="small-text" style="text-align: left; width: 300px; cursor: pointer; text-decoration: underline; animation-delay: 0.6s;" id="changetextcolor" onclick="changetexttoblack()">Change text color to Black</p>
 
-					<table class="tables" style="padding-top: 20px;">
+					<table class="tables" style="padding-top: 20px; animation-delay: 0.8s;">
 						<tr>
 							<td><div class="tab-active" id="xs-id" onclick="selectthissize(this.id)"><div class="color-disks">XS</div><p class="small-text">Shoulder: 32in</p></div></td>
 							<td><div class="tab-inactive" id="m-id" onclick="selectthissize(this.id)"><div class="color-disks">M</div><p class="small-text">Shoulder: 40in</p></div></td>
@@ -189,7 +189,7 @@
 						</tr>
 					</table>
 
-				<button class="button-1" id="add-to-cart-bttn" style="margin-top: 30px;" onclick="addtocart()">Add XS to the cart</button>
+				<button class="button-1" id="add-to-cart-bttn" style="margin-top: 30px; animation-delay: 1s;" onclick="addtocart()">Add XS to the cart</button>
 
 			</div>
 

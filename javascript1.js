@@ -46,7 +46,7 @@ function openstepone() {
 
 					const jerseybox1 = document.getElementById('jersey-box-1');
 					jerseybox1.style.width = '40%';
-					jerseybox1.style.marginRight = '-100px';
+					jerseybox1.style.marginLeft = '700px';
 
 					changedisplay('jersey-box-2', 'none')
 
@@ -81,7 +81,7 @@ function opensteptwo() {
 
 					const jerseybox1 = document.getElementById('jersey-box-1');
 					jerseybox1.style.width = '40%';
-					jerseybox1.style.marginRight = '-100px';
+					jerseybox1.style.marginLeft = '700px';
 
 					changedisplay('jersey-box-2', 'none')
 
@@ -118,7 +118,7 @@ function openstepthree() {
 
 					const jerseybox1 = document.getElementById('jersey-box-1');
 					jerseybox1.style.width = '40%';
-					jerseybox1.style.marginRight = '-100px';
+					jerseybox1.style.marginLeft = '700px';
 
 					changedisplay('jersey-box-2', 'none')
 
@@ -129,6 +129,7 @@ function openstepthree() {
 				}
 
 function openstepfour() {
+
 					
 					changedisplay('home-div', 'none')
 					changedisplay('trainstops', 'block')
@@ -159,16 +160,54 @@ function openstepfour() {
 
 					const text3 = document.getElementById('step-3-text');
 					text3.setAttribute("onclick", "openstepthree()")
+					
 
-					const jerseybox1 = document.getElementById('jersey-box-1');
-					jerseybox1.style.width = '34%';
-					jerseybox1.style.marginRight = '-140px';
-
-					changedisplay('jersey-box-2', 'block');
 
 					const jersey1filter = document.getElementById('jersey1id').style.filter;
 
 					document.getElementById('jersey2id').style.filter = jersey1filter;
+
+					let widthindex = 0;
+
+
+
+						setInterval(function() {
+						const jerseybox1 = document.getElementById('jersey-box-1');
+						console.log(widthindex);
+						if (widthindex >= 6) {
+							clearInterval(); 
+						
+						 } else  {
+						widthindex += 0.1;
+						let changedwidth = 40 - widthindex;
+						jerseybox1.style.width = "" + changedwidth + "%";
+					} }, 1);
+
+
+					// 	let marginindex = 0;
+
+					// 	setInterval(function() { 
+					// 	const jerseybox1 = document.getElementById('jersey-box-1');
+					// 	console.log(marginindex);
+					// 	if (marginindex >= 180) {
+					// 		clearInterval(); 
+						
+					// 	 } else  {
+					// 	marginindex += 1;
+					// 	let changedmargin = 700 - marginindex;
+					// 	jerseybox1.style.marginLeft = "" + changedmargin + "px";
+					// } }, 10);
+
+					// function animatejersey1() {
+					// // jerseybox1.style.width = '34%';
+					// // jerseybox1.style.marginRight = '-140px';
+
+					// }
+
+					setTimeout(function() {
+					changedisplay('jersey-box-2', 'block');
+					}, 0)
+
 
 
 					updatestep1ofnav();
@@ -176,9 +215,10 @@ function openstepfour() {
 					updatestep2ofnav();
 
 					updatestep3ofnav();
-
-
 				}
+
+
+					
 
 
 
